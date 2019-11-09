@@ -1,0 +1,224 @@
+
+@import 'vars.scss';
+@import 'reset.scss';
+@import 'mixins.scss';
+
+.header {
+    text-align: center;
+    padding: 110px 0 0 0;
+    color: $colorSecondary;
+    font-size: 18px;
+}
+h1, h2 {
+    font-size: 60px;
+    padding: 0 0 10px 0;
+    color: $colorBase;
+    font-family: $fontH;
+    font-weight: bold;
+}
+
+.fire {
+    display: flex;
+    justify-content: center;
+
+    .fire__line {
+        width: $arrowSize * 10;
+        height: 1px;
+        background-color: $colorBase;
+        margin: 7px 10px;
+    }
+}
+.info-board {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    .left-block {
+        margin: 50px 130px;
+    }
+
+    .cursore-slide-left {
+        width: $arrowSize;
+        height: $arrowSize;
+        position: absolute;
+        top: 50%;
+        left: 50px;
+        @include triangle( $arrowSize, $colorBase, left);
+    }
+
+    .profile {
+        border: 1px solid $colorBase;
+        position: relative;
+        box-sizing: border-box;
+
+        .profile__pasportu--top {
+            width: 100px;
+            height: 1px;
+            background-color: $colorBase;
+            position: absolute;
+            top: -15px;
+            left: -15px;
+
+            &:before {
+                content: '';
+                width: 100px;
+                height: 1px;
+                background-color: $colorBase;
+                position: absolute;
+                top: 0;
+                left: 319px;
+            }
+        }
+        .profile__pasportu--bottom {
+            width: 100px;
+            height: 1px;
+            background-color: $colorBase;
+            position: absolute;
+            bottom: -15px;
+            left: -15px;
+
+            &:before {
+                content: '';
+                width: 100px;
+                height: 1px;
+                background-color: $colorBase;
+                position: absolute;
+                bottom: 0;
+                left: 320px;
+            }
+        }
+        .profile__pasportu--left {
+            position: absolute;
+            border-left: 1px solid $colorBase;
+            height: 100px;
+            top: -15px;
+            left: -16px;
+
+            &:before {
+                content: '';
+                position: absolute;
+                border-left: 1px solid $colorBase;
+                height: 100px;
+                top: 322px;
+                left: 0;
+            }
+        }
+        .profile__pasportu--right {
+            position: absolute;
+            border-left: 1px solid $colorBase;
+            height: 100px;
+            top: -15px;
+            right: -16px;
+
+            &:before {
+                content: '';
+                position: absolute;
+                border-left: 1px solid $colorBase;
+                height: 100px;
+                top: 322px;
+                left: 0;
+            }
+        }
+    }
+}
+.vertical-line {
+    width: $arrowSize * 10;
+    border-left: 1px solid $colorBase;
+    margin: 0 70px;
+}
+.right-block {
+    display: block;
+    text-align: center;
+    margin: 50px 130px;
+
+    .right-block__name {
+        font-size: 30px;
+        font-family: $fontH;
+        color: $colorGrey;
+        font-weight: bold;
+    }
+    .right-block__line {
+        margin: 20px auto;
+        width: $arrowSize * 4;
+        height: 2px;
+        background-color: $colorBase;
+    }
+    .right-block__prof {
+        font-size: 20px;
+        padding: 0 0 30px 0;
+        font-family: $fontBase;
+        color: $colorSecondary;
+    }
+    .social-net--link {
+        display: inline;
+        justify-content: center;
+        margin: 2px;
+        text-decoration: none;
+        outline: none;
+        color: $colorIcon;
+        font-size: 17px;
+        border: 1px solid $colorIcon;
+        border-radius: 50%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .fab {
+        width: 20px;
+        height: 20px;
+    }
+    .cursor-slide-right {
+        width: $arrowSize;
+        height: $arrowSize;
+        position: absolute;
+        top: 50%;
+        right: 50px;
+        @include triangle( $arrowSize, $colorBase, right);
+    }
+    .right-block__text {
+        margin: 30px 0 30px 0;
+        font-family: $fontBase;
+        color: $colorText;
+    }
+    .right-block__dote-line {
+        width: 30px;
+        height: 4px;
+        background-color: $colorBase;
+        margin: 20px auto;
+        position: relative;
+
+        &:before {
+            content: '';
+            width: 15px;
+            height: 4px;
+            background-color: $colorBase;
+            position: absolute;
+            left: 40px;
+            top: 0;
+        }
+
+        &:after {
+            content: '';
+            width: 15px;
+            height: 4px;
+            background-color: $colorBase;
+            position: absolute;
+            right: 40px;
+            top: 0;
+        }
+    }
+    .button {
+        border-color: $colorBase;
+        color: $colorGrey;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 5px 20px;
+        outline: none;
+
+        &:hover {
+            background-color: $colorBase;
+            cursor: pointer;
+            color: #fff;
+            border-color: $colorGrey;
+        }
+    }
+}

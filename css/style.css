@@ -1,0 +1,289 @@
+@charset "UTF-8";
+body {
+  background: #ffffff;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
+​
+body, form, div, p, a, img, h1, h2, h3, h4, h5, h6, table, table tr, table td {
+  border: none;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+​
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+​
+a {
+  text-decoration: underline;
+  outline: none;
+}
+
+​
+a:hover {
+  text-decoration: none;
+}
+
+.header {
+  text-align: center;
+  padding: 110px 0 0 0;
+  color: #898f8f;
+  font-size: 18px;
+}
+
+h1, h2 {
+  font-size: 60px;
+  padding: 0 0 10px 0;
+  color: #ffcc00;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.fire {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.fire .fire__line {
+  width: 200px;
+  height: 1px;
+  background-color: #ffcc00;
+  margin: 7px 10px;
+}
+
+.info-board {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+}
+
+.info-board .left-block {
+  margin: 50px 130px;
+}
+
+.info-board .cursore-slide-left {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  height: 0;
+  width: 0;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #ffcc00;
+  border-top: 10px solid transparent;
+}
+
+.info-board .profile {
+  border: 1px solid #ffcc00;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.info-board .profile .profile__pasportu--top {
+  width: 100px;
+  height: 1px;
+  background-color: #ffcc00;
+  position: absolute;
+  top: -15px;
+  left: -15px;
+}
+
+.info-board .profile .profile__pasportu--top:before {
+  content: '';
+  width: 100px;
+  height: 1px;
+  background-color: #ffcc00;
+  position: absolute;
+  top: 0;
+  left: 319px;
+}
+
+.info-board .profile .profile__pasportu--bottom {
+  width: 100px;
+  height: 1px;
+  background-color: #ffcc00;
+  position: absolute;
+  bottom: -15px;
+  left: -15px;
+}
+
+.info-board .profile .profile__pasportu--bottom:before {
+  content: '';
+  width: 100px;
+  height: 1px;
+  background-color: #ffcc00;
+  position: absolute;
+  bottom: 0;
+  left: 320px;
+}
+
+.info-board .profile .profile__pasportu--left {
+  position: absolute;
+  border-left: 1px solid #ffcc00;
+  height: 100px;
+  top: -15px;
+  left: -16px;
+}
+
+.info-board .profile .profile__pasportu--left:before {
+  content: '';
+  position: absolute;
+  border-left: 1px solid #ffcc00;
+  height: 100px;
+  top: 322px;
+  left: 0;
+}
+
+.info-board .profile .profile__pasportu--right {
+  position: absolute;
+  border-left: 1px solid #ffcc00;
+  height: 100px;
+  top: -15px;
+  right: -16px;
+}
+
+.info-board .profile .profile__pasportu--right:before {
+  content: '';
+  position: absolute;
+  border-left: 1px solid #ffcc00;
+  height: 100px;
+  top: 322px;
+  left: 0;
+}
+
+.vertical-line {
+  width: 200px;
+  border-left: 1px solid #ffcc00;
+  margin: 0 70px;
+}
+
+.right-block {
+  display: block;
+  text-align: center;
+  margin: 50px 130px;
+}
+
+.right-block .right-block__name {
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  color: #666666;
+  font-weight: bold;
+}
+
+.right-block .right-block__line {
+  margin: 20px auto;
+  width: 80px;
+  height: 2px;
+  background-color: #ffcc00;
+}
+
+.right-block .right-block__prof {
+  font-size: 20px;
+  padding: 0 0 30px 0;
+  font-family: "Raleway", sans-serif;
+  color: #898f8f;
+}
+
+.right-block .social-net--link {
+  display: inline;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 2px;
+  text-decoration: none;
+  outline: none;
+  color: #cccccc;
+  font-size: 17px;
+  border: 1px solid #cccccc;
+  border-radius: 50%;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.right-block .fab {
+  width: 20px;
+  height: 20px;
+}
+
+.right-block .cursor-slide-right {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  height: 0;
+  width: 0;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #ffcc00;
+  border-top: 10px solid transparent;
+}
+
+.right-block .right-block__text {
+  margin: 30px 0 30px 0;
+  font-family: "Raleway", sans-serif;
+  color: #494949;
+}
+
+.right-block .right-block__dote-line {
+  width: 30px;
+  height: 4px;
+  background-color: #ffcc00;
+  margin: 20px auto;
+  position: relative;
+}
+
+.right-block .right-block__dote-line:before {
+  content: '';
+  width: 15px;
+  height: 4px;
+  background-color: #ffcc00;
+  position: absolute;
+  left: 40px;
+  top: 0;
+}
+
+.right-block .right-block__dote-line:after {
+  content: '';
+  width: 15px;
+  height: 4px;
+  background-color: #ffcc00;
+  position: absolute;
+  right: 40px;
+  top: 0;
+}
+
+.right-block .button {
+  border-color: #ffcc00;
+  color: #666666;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 5px 20px;
+  outline: none;
+}
+
+.right-block .button:hover {
+  background-color: #ffcc00;
+  cursor: pointer;
+  color: #fff;
+  border-color: #666666;
+}
